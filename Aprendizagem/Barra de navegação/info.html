@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Barra de navegação</title>
+		<style>
+		ul{
+				list-style: none;
+				padding: 0px;
+				margin: 0px;
+				width: 720px;
+				background: rgb(3, 167, 179) url(imagens/fundo-horizontal.png) repeat-x;
+				float: left;
+			}
+			ul li{
+				float: left;
+				background: url(imagens/divisor.png) repeat-y left top;
+			}
+			li a{
+				display: block;
+				padding:15px;
+				text-decoration: none;
+				color: white;
+				font-weight: bold;
+				font-size: 19px;
+				line-height:25px;
+			}
+			a:hover , .home, .fale, .contato, .info{
+				background:rgb(82, 243, 255) ;
+				color: black;
+			}
+			.excluir{
+				background: none;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<h1>Barra de navegação Horizontal</h1>
+
+		<ul>
+			<li class="excluir">
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="fale.html">Fale conosco</a>
+			</li>
+			<li>
+				<a href="contato.html">Contatos</a>
+			</li>
+			<li>
+				<a href="info.html" class="info">Informações</a>
+			</li>
+		</ul>
+	
+		</ul>
+	</body>
+</html>
