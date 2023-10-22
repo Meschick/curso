@@ -1,0 +1,46 @@
+*{ /*Zeramos todos os espaçamentos internos e externos */
+  padding: 0;
+  margin: 0;
+
+}
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+header{ /* Nosso container Flex pai*/
+  display: flex;
+  justify-content: space-between;
+  background: rgb(247, 216, 159);
+  color: white;
+  padding:10px;
+  height: 60px;
+  line-height: 60px;
+
+}
+#menu ul{ 
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  
+}
+#menu li a{
+  display: block;
+  text-decoration: none;
+  padding-right:30px;
+  color: white;
+  font-size: 18px;
+}
+#menu a:hover{
+  text-decoration: underline;
+  color: orange;
+}
+#buttom {
+  margin-right: 25px;
+   
+}
+
+.img{
+  height: 60px;
+  margin-left: 50px;
+
+}
