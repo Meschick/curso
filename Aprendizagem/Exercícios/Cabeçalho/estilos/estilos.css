@@ -14,7 +14,7 @@ header{ /* Nosso container Flex pai*/
   color: white;
   padding:10px;
   height: 60px;
-  line-height: 60px;
+  line-height: 60px;/*Centralizamos os conteúdos no centro do tamanho da linha...*/
 
 }
 #menu ul{ 
