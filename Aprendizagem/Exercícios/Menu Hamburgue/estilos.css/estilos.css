@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  padding: 15px;
+  background: rgb(250, 208, 129);
+}
+#burgue{
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color:rgb(4, 4, 185);
+  
+}
+#burgue:hover{
+  background-color: white;
+  color: orange;
+  cursor: pointer;
+}
+menu{
+  display: none;
+  
+
+}
+ ul{
+  list-style: none;
+  padding: 5px;
+ 
+
+}
+li a{
+  display: block;
+  border: 1px solid white;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  background:rgb(250, 208, 129);
+}
+a:hover{
+  background: white;
+  color: orange;
+}
