@@ -1,0 +1,96 @@
+:root{
+  --white:#f2f2f2;
+  --white2:#fff;
+  --grey:#9e9e9e;
+  --grey3:#d1d1d1;
+  --blueclean:#225992;
+
+  /*Variáveis de cores ...*/
+}
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background:var(--white);
+}
+#container{
+  width: 85%; /*1000px*/
+  margin: 0 auto;
+  background:var(--white2) ;
+  min-width: 1000px;
+  /*Container de layout Líquido ... (85*100)/1000 para temos a porcentagem exata da largura...*/
+
+  
+}
+#marca{
+  height: 200px;
+  background: var(--blueclean) url(../imagens/cabecalho2.jpg) no-repeat center;
+  text-align: center;
+  line-height: 200px;
+
+
+}
+#conteudo{
+  width:65% ;/*650px*/
+  float: right;
+  margin-right: 10px;
+  padding: 5px;
+  /*Container Conteúdo que vai guarda mais duas divs...
+  Seu width é medido : (650*100)/1000*/
+  
+}
+#conteudo-principal{
+  width: 46%;/*300px*/
+  float: left;
+  padding: 5px;
+  border: 2px solid red;
+  /*Seu widht é : (300*100)/650
+  Não podemos esquecer de colocar o Float em ambas divs, para  que ela possa flutuar nas direções desajadas...*/
+
+}
+#conteudo-secundario{
+  width:42% ;
+  float: right;
+  background: var(--grey3);
+  padding: 5px;
+  border: 2px solid pink;
+}
+#navegacao{
+  width:30% ;/*300px*/
+  float: left;
+  border: 2px solid green;
+  margin-right: 8px;
+  background: var(--grey3);
+  padding: 5px;
+/*formula : (300*100)/1000 
+Dessa forma encotramos o width em porcentagem */
+}
+#rodape{
+  clear: both;
+  background: orange;
+  text-align: center;
+  /*Como usamos elementos flutuantes nos conteúdos acima, somos obrigado a colocar o 
+  clear:both , para limpar os elementos flutuantes, com isso o rodapé não vai ficar bugado com os outros elementos..
+  */
+}
+#navegacao ul{
+  list-style: none;
+}
+#navegacao ul li{
+  padding-bottom: 5px;
+
+}
+#navegacao li a{
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+
+}
+#navegacao a:hover{
+  text-decoration: underline;
+  color: orange;
+  /*Efeitos especiais */
+
+}
+.img1{
+  width:100%;
+  /*Configurações de img*/
+}
