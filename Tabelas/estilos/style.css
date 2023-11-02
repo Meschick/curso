@@ -1,0 +1,32 @@
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+table{
+  width: 700px;
+  
+}
+th,td{
+  
+  border-collapse: separate;/*collapse*/
+  padding: 5px;
+
+}
+th{
+  text-transform: uppercase;/*Irá transforma o texto em maiúsculo*/
+  border-top: ;
+  font-size: 14px;
+  border-top: 2px solid rgb(163, 234, 255);
+  border-bottom: 2px solid rgb(120, 235, 255);
+  letter-spacing: 0.2em;
+}
+tr.alternar{
+  background: rgb(243, 242, 242);
+}
+.right{
+  text-align: right;
+}
+
+tr:hover{
+  background: rgb(162, 255, 255);
+}
