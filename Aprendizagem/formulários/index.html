@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>formulários</title>
+  <link rel="stylesheet" href="./estilos/style.css">
+</head>
+<body>
+  <form>
+    <fieldset><!--Agrupa dados semelhantes de formulário-->
+      <legend>Detalhes de Contato</legend><!--Legenda do nosso Fieldset-->
+
+      <div class="container-input">
+
+        <div>
+          <!--São criados os input -->
+          <!--Label é como se fosse uma etiqueta de um elemento...-->
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" >
+        </div><!--Fechamento Div-->
+        <div>
+          <label for="Email">Email:</label>
+          <input type="email" id="Email" >
+        </div><!--Fechamento div-->
+        <div>
+          <label for="Telefone">Telefone:</label>
+          <input type="tel" id="Telefone" >
+        </div><!--Fechamento Div-->
+        <div>
+          <label for="url">Url:</label>
+          <input type="url" id="url" >
+          
+        </div><!--Fechamento Div-->
+
+        <fieldset class="blc-comentarios">
+          <legend>Comentários</legend>
+          <div>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Comentários...."></textarea>
+          </div><!--Fechamento Div-->
+        </fieldset>
+
+        <fieldset>
+          <legend>Assuntos:</legend>
+
+          <div>
+            <label class="nome-assunto" class="assunto">
+              <input class="checkbox" form="check" type="checkbox" id="check" name="check">Acessória  
+            </label>        
+          </div><!--Fechamento Div-->
+
+          <div>
+            <label class="nome-assunto">
+              <input class="checkbox" form="check" type="checkbox" id="Marketing" name="check">Marketing  
+            </label>        
+          </div><!--Fechamento Div-->
+
+        </fieldset>
+
+        <div class="buttom">
+          <button type="submit" id="btn-enviar">Enviar</button>
+        </div><!--Fechamento Div-->
+
+      </div><!--Container input-->
+        
+  </form><!--Fechamento Form-->
+</body>
+</html>
