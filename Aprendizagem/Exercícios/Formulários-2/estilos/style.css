@@ -1,0 +1,89 @@
+/*Personalização Gerais*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background:#643d87 url(../assets/fundo.jpg) no-repeat top center;
+}
+
+/*Personalização do Container Login*/
+#container{
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  margin: 0px auto;
+  margin-top: 120px;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+#container .logo img{
+  margin-top: -60px;
+  width: 100px;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+#container input{
+  width: 80%;
+  margin-bottom: 10px;
+  height:40px;
+  background: #fff;
+  outline: none;
+  border-radius: 8px;
+  padding-left:40px;
+  
+
+}
+input#usuário{
+  background: url(../assets/icone-usuario.png) no-repeat;
+  background-position: 10px;
+}
+
+input#Senha{
+  background: url(../assets/icone-cadeado.png) no-repeat;
+  background-position: 10px;
+  
+}
+
+#container button{
+  width: 80%;
+  padding: 8px;
+  margin-top:20px;
+  font-weight: 600;
+  font-size: 18px;
+  background: rgb(230, 151, 5);
+  cursor: pointer;
+  border-radius: 10px;
+}
+#container button:hover{
+  transform: scale(1.03);
+  transition: 0.6s;
+  box-shadow: 2px 2px 8px orange;
+}
+
+::placeholder{
+  color: rgb(129, 128, 128);
+  padding-left: 5px;
+}
+
+/*Personalização de Link*/
+p{
+  color: black;
+  margin-top: 15px;
+}
+p>a{
+  text-decoration: none;
+  color: white;
+}
+p a:hover{
+  color: purple;
+  text-decoration: underline;
+  transform: scale(1.06);
+  transition: .6s;
+}
