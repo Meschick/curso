@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif ;
+}
+
+body{
+  background: #F6F9FF;
+  height: 100vh;/*Altura total do dispositivo*/
+  width:100% ;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #434343;
+
+}
+main#cards{
+  display: flex;
+  padding: 32px;
+  
+}
+main#cards section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  padding: 1rem 1.5rem ;
+  border-radius: 10px;
+  max-height: 256px;
+  margin-left: 32px;
+}
+
+main#cards section.card h2 {
+  margin:5px 0;
+  font-size: 100%;
+}
+
+main#cards section.card span {
+  font-weight: 300;
+  max-width: 250px;
+  margin-bottom: 5px;
+}
+
+/*:first-child é um comando que vai selecionar o primeiro Filho da Div Cards. Que será a primeira Section  */
+main#cards section.card:first-child{
+  margin-left: 0;
+}
+/*Gerais do Button*/
+main#cards section.card button{
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 32px;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight:600 ;
+  color: white;
+
+}
+
+/*configurações do Button*/
+main#cards section.card.carrinho button{
+  background: linear-gradient(to right, #9f66ff , #dfcbff);
+}
+main#cards section.card.telefone button{
+  background: linear-gradient(to right, #3e8aff , #bbdeff);
+}
+main#cards section.card.envelope button{
+  background: linear-gradient(to right, #fe5f8f , #ffe7d9);
+}
+
+/*Adicionando Sombra*/
+
+main#cards section.card.carrinho {
+  box-shadow: 20px 20px 50px -30px #dbc4ff;
+}
+main#cards section.card.telefone {
+  box-shadow: 20px 20px 50px -30px #afd6ff;
+}
+main#cards section.card.envelope {
+  box-shadow: 20px 20px 50px -30px #ffc1d5;
+}
+
+/*Breakpoints*/
+
+@media (max-width: 745px) {
+  main#cards{ /* Container dos meus cards*/
+    flex-direction: column;
+    /*Quando minha largura for menor que 745px, meus cards vão ficar em coluna.*/
+  }
+
+  main#cards section.card {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+
+  /*Last-child seleciona o último filho do meu ID Cards*/
+  main#cards section.card:last-child {
+    margin-bottom: 0;
+  }
+}
